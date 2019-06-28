@@ -6,6 +6,8 @@ import IconButton from '../template/iconButton'
 const TodoList = props => {
 
     const renderRows = () => {
+        const test = props.search
+        console.log(test)
         const list = props.list || []
         return list.map(todo => (
             <tr key={todo._id}>
